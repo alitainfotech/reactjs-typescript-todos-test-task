@@ -1,0 +1,29 @@
+@import "../globals/color.scss";
+
+.headerContainer {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 10px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .title {
+    font-size: 22px;
+  }
+
+  .logoutButton {
+    background-color: $primary-bg-color;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    color: $primary-bg-white;
+    border: none;
+    cursor: pointer;
+  }
+}

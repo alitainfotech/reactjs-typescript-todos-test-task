@@ -1,0 +1,55 @@
+@import "../globals/color.scss";
+
+.loginContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $primary-bg-color;
+
+  .formContainer {
+    background-color: $primary-bg-white;
+    min-height: 350px;
+    width: 450px;
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    border-radius: 5px;
+
+    .form {
+      flex: 1;
+      margin-block-start: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+
+      .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .submitButton {
+        background-color: $primary-bg-color;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: $primary-text-white;
+      }
+    }
+
+    .title {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
